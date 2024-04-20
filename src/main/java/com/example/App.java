@@ -3,7 +3,6 @@ package com.example;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class App {
@@ -52,7 +51,7 @@ public class App {
       }*/
 
       static void insereDados(Statement s, String nome, double preco, int quantidade, String string) throws SQLException {
-        String precoFormatado = String.format("%.2f", preco);   
+        //String precoFormatado = String.format("%.2f", preco);   
         
         String sql = "INSERT INTO produtos (nome, preco, quantidade_estoque, data_criacao) VALUES ('" 
                    + nome + "', " + preco + ", " + quantidade + ", '" + string + "')";
