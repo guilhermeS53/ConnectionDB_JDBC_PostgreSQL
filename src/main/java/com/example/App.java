@@ -3,6 +3,7 @@ package com.example;
 import java.sql.Statement;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class App {
@@ -15,9 +16,9 @@ public class App {
                 Statement s = (Statement) conn.createStatement();
                 //criaTabelaProdutos(s);
                 //insereDados(s, "Pão", 2, 10, "2024-04-18");
-                //consultaDados(s);
-                atualizaPreco(s, 2, 50);
-                atualizaNome(s, 2, "Frango");
+                consultaDados(s);
+                //atualizaPreco(s, 2, 50);
+                atualizaNome(s, 2, "Carne de Porco");
             } else {
                 System.out.println("Conexão FALHOU!");
             }
@@ -26,7 +27,7 @@ public class App {
             e.printStackTrace();
         }
     }
-        /*static void consultaDados(Statement s) {
+        static void consultaDados(Statement s) {
             String sql = "SELECT * FROM produtos";
             try {
                 ResultSet result = ((java.sql.Statement) s).executeQuery(sql);
@@ -36,7 +37,7 @@ public class App {
             } catch (SQLException e) {
                 e.printStackTrace();
             }
-    }*/
+    }
 
     /*static void criaTabelaProdutos(Statement s) throws Exception {
         String sql = "CREATE TABLE IF NOT EXISTS produtos ("
