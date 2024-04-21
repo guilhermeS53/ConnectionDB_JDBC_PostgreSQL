@@ -53,10 +53,3 @@ Connection conn = DriverManager.getConnection("jdbc:postgresql://HOST:PORTA/NOME
 2. Descomente ou comente os métodos de acordo com as operações que deseja realizar (consultar, inserir, atualizar).
 
 3. Execute o projeto. Se tudo estiver configurado corretamente, você deve ver a saída no console indicando o sucesso da operação.
-
-## Observações
-
-- Certifique-se de fechar todas as conexões com o banco de dados adequadamente após o uso para evitar vazamentos de recursos.
-- Este é um exemplo simples e pode ser expandido para atender a requisitos mais complexos do projeto.
-
-Divirta-se explorando o código e trabalhando com o PostgreSQL no Java!
