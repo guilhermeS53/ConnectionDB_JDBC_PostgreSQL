@@ -50,6 +50,4 @@ Certifique-se de que você tenha o driver JDBC do PostgreSQL adicionado ao seu p
 Connection conn = DriverManager.getConnection("jdbc:postgresql://HOST:PORTA/NOME_DO_BANCO", "USUARIO", "SENHA");
 ```
 
-2. Descomente ou comente os métodos de acordo com as operações que deseja realizar (consultar, inserir, atualizar).
-
 3. Execute o projeto. Se tudo estiver configurado corretamente, você deve ver a saída no console indicando o sucesso da operação.
