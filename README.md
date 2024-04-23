@@ -38,7 +38,7 @@ Certifique-se de que você tenha o driver JDBC do PostgreSQL adicionado ao seu p
 <dependency>
     <groupId>org.postgresql</groupId>
     <artifactId>postgresql</artifactId>
-    <version>42.2.20</version> <!-- Verifique a versão mais recente no repositório Maven -->
+    <version>42.2.20</version> <!-- Verificar a versão mais recente no repositório Maven -->
 </dependency>
 ```
 
