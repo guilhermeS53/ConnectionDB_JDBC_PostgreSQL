@@ -12,7 +12,7 @@ public class App {
         try {
             Connection conn = DriverManager.getConnection("jdbc:postgresql://isabelle.db.elephantsql.com/iuiopnbm", "iuiopnbm", "4yejkBsCULoAUTTi-bkMCcemGj93rQPp");
             if (conn != null) {
-                System.out.println("DataBase CONECTADO com SUCESSO!");
+                System.out.println("DB CONECTADO com SUCESSO!");
                 Statement s = (Statement) conn.createStatement();
                 //criaTabelaProdutos(s);
                 //insereDados(s, "Pão", 2, 10, "2024-04-18");
